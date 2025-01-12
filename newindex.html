@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature-Rich Blog Website</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="main-header">
+        <div class="logo">The Blogger Artist</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to Your Creative Space</h1>
+            <p>Organize, create, and share your thoughts with the world.</p>
+            <button id="get-started">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://media.istockphoto.com/id/628855094/photo/great-wall.jpg?s=1024x1024&w=is&k=20&c=58KYFnyAjiq9nroKX11NqmlElT15RU09n-Em_1gd1Aw=" alt="Hero Image">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Features</h2>
+        <div class="feature">
+            <img src="https://www.superstarteacher.com.sg/Blog/wp-content/uploads/2023/05/Neutral-Minimalist-Photocentric-Study-Habits-Keynotes-Presentation-1-1024x576.png" alt="Note-Taking">
+            <h3>Note-Taking</h3>
+            <p>Jot down your ideas and organize your thoughts seamlessly.</p>
+        </div>
+        <div class="feature">
+            <img src="https://codingartistweb.com/wp-content/uploads/2022/04/Rich-Text-Editor-01.png" alt="Rich Text Editor">
+            <h3>Rich Text Editor</h3>
+            <p>Use a powerful editor to format and craft your blogs effortlessly.</p>
+        </div>
+        <div class="feature">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZC5w2PpwPSI4aF6uc5_YhoEbDv0PEzS9V3g&s0" alt="Analytics">
+            <h3>Analytics Dashboard</h3>
+            <p>Track your blog's performance and understand your audience.</p>
+        </div>
+    </section>
+
+   
+    <section id="note-taking">
+        <h2>Note-Taking</h2>
+        <div id="note-toolbar">
+            <button class="toolbar-btn" data-command="bold">B</button>
+            <button class="toolbar-btn" data-command="italic">I</button>
+            <button class="toolbar-btn" data-command="underline">U</button>
+        </div>
+        <div id="note-editor" contenteditable="true" placeholder="Write your notes here..."></div>
+        <button id="save-note">Save Note</button>
+        <h3>Saved Notes</h3>
+        <ul id="notes-list"></ul>
+    </section>
+    
+    <section id="text-editor">
+        <h2>Rich Text Editor</h2>
+        <div id="editor-toolbar">
+            <button class="toolbar-btn" data-command="bold">Bold</button>
+            <button class="toolbar-btn" data-command="italic">Italic</button>
+            <button class="toolbar-btn" data-command="underline">Underline</button>
+        </div>
+        <div id="editor" contenteditable="true">Start writing here...</div>
+        <button id="save-rich-text">Save Text</button>
+    </section>
+    
+    <section id="analytics-dashboard">
+        <h2>Analytics Dashboard</h2>
+        <div class="analytics-container">
+            <div class="analytics-card">
+                <h3>Total Notes</h3>
+                <p id="total-notes">0</p>
+            </div>
+            <div class="analytics-card">
+                <h3>Blog Views</h3>
+                <p id="blog-views">0</p>
+            </div>
+            <div class="analytics-card">
+                <h3>Clicks on Get Started</h3>
+                <p id="get-started-clicks">0</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!-- Blog Section -->
+    <section id="blogs">
+        <h2>Latest Blogs</h2>
+        <div id="blog-container"></div>
+    </section>
+
+    
+
+        <!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Please fill out the form below to get in touch.</p>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+    <div id="form-response" class="hidden"></div>
+</section>
+
+<nav>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 The Blogger Artist . All Rights Reserved.</p>
+</footer>
+
+    <!-- External JS -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
